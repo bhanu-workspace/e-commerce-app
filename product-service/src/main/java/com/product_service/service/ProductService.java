@@ -26,4 +26,13 @@ public class ProductService {
     public List<Product> getProduct(Long productId){
         return productRepository.findById(productId).stream().toList();
     }
+
+    public String deleteProduct(Long productId){
+        if (productRepository.existsById(productId)) {
+            productRepository.deleteById(productId);
+            return "Product Deleted";
+        } else {
+            return "Product not found";
+        }
+    }
 }
