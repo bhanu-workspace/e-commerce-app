@@ -1,0 +1,53 @@
+# Ignore Maven & Gradle build directories
+/target/
+/build/
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vscode/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled files
+*.class
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore environment-specific configurations
+.env
+*.properties.local
+application-*.yml  # Optional: Ignore environment-specific configs like application-dev.yml
+
+# Ignore dependency directories
+/.mvn/
+/.gradle/
+/node_modules/
+
+# Ignore database and generated files
+*.db
+*.sqlite
+*.h2.db
+*.mv.db
+
+# Ignore JAR and WAR files
+*.jar
+*.war
+
+# Ignore Spring Boot Dev Tools temporary files
+spring-boot-devtools.properties
+
+# Ignore Test Coverage Reports
+/coverage/
+/jacoco/
+*.exec
